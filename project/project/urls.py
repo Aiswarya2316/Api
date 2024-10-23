@@ -20,9 +20,9 @@ from rest_framework.routers import DefaultRouter
 from app.views import model_serializer
 
 router = DefaultRouter()
-router.register(r'tasks', model_serializer, basename='task')
+router.register(r'employees', model_serializer, basename='task')
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include(router.urls)),
+    path('employemanagement/', include(router.urls)),
 
 ]
