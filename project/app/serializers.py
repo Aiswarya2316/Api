@@ -12,7 +12,14 @@ from .models import *
 #     empid=serializers.CharField()
 
 
+# class model_serializers(serializers.ModelSerializer):
+#     class Meta:
+#         model=employe
+#         fields='__all__'
+
+
+
 class model_serializers(serializers.ModelSerializer):
     class Meta:
-        model=employe
+        model=student
         fields='__all__'
